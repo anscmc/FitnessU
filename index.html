@@ -1,0 +1,495 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+<link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png?v=00zbKoYwb9">
+<link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png?v=00zbKoYwb9">
+<link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png?v=00zbKoYwb9">
+<link rel="manifest" href="/site.webmanifest?v=00zbKoYwb9">
+<link rel="mask-icon" href="/safari-pinned-tab.svg?v=00zbKoYwb9" color="#213f9a">
+<link rel="shortcut icon" href="/favicon.ico?v=00zbKoYwb9">
+<meta name="msapplication-TileColor" content="#213f9a">
+<meta name="theme-color" content="#213f9a">
+        <!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-123760229-3"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'UA-123760229-3');
+</script>
+<!--old (remove 'x'): UxA-128685181-1-->
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>FitnessU | Erie, PA</title>
+        <meta name="description" content="FitnessU is a gym located in Erie, PA.">
+        <meta name="keywords" content="fitnessu, fitness, gym, lifting">
+         <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+        <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+        <link rel="stylesheet" type="text/css" href="Resources/css/normalize.css">
+        <link rel="stylesheet" type="text/css" href="Resources/css/animate.css">
+        <link rel="stylesheet" type="text/css" href="Resources/css/style.min.css?v=4">
+        <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet">
+        <link rel="stylesheet" href="https://www.w3schools.com/lib/w3.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+        
+        <script type="text/javascript">         
+$("#slideshow > div:gt(0)").hide();
+setInterval(function() { 
+  $('#slideshow > div:first')
+//    .fadeOut(1000)
+    .next()
+//    .fadeIn(1000)
+    .end()
+    .appendTo('#slideshow'); 
+},  4000);           
+function showNav(){
+           $("div.slideNav").removeClass("hideSlide")
+            $("div.slideNav").toggleClass("slideOutUp slideInDown");
+        }
+        </script>
+    <!-- Facebook Pixel Code -->
+<script>
+  !function(f,b,e,v,n,t,s)
+  {if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+  n.callMethod.apply(n,arguments):n.queue.push(arguments)};
+  if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
+  n.queue=[];t=b.createElement(e);t.async=!0;
+  t.src=v;s=b.getElementsByTagName(e)[0];
+  s.parentNode.insertBefore(t,s)}(window, document,'script',
+  'https://connect.facebook.net/en_US/fbevents.js');
+  fbq('init', '307701319819414');
+  fbq('track', 'PageView');
+</script>
+<noscript><img height="1" width="1" style="display:none"
+  src="https://www.facebook.com/tr?id=307701319819414&ev=PageView&noscript=1"
+/></noscript>
+<!-- End Facebook Pixel Code -->
+
+    </head>
+    <body>
+                      <!-- COVID-19 -->
+          <style type="text/css">
+              .covid19btn{
+                  display: inline-block;
+                  position: fixed;
+                  top:10px;
+                  left:120px;
+                  background-color: red;
+                  color: white;
+                  font-weight: 600;
+                  font-family: 'Lato', sans-serif;
+                  z-index: 1000;
+                  cursor: pointer;
+                  text-decoration: none!important;
+                  border:1px solid red;
+                  transition: ease all .3s;
+                  border-radius: 5px;
+                  font-size: 20px;
+                  padding-left:10px;
+                  padding-right: 10px;
+              }
+              .covid19btn:hover{
+                  background-color: transparent;
+                  color: white!important;
+                  text-shadow: 0 0 5px black;
+              }
+              .covid19cover{
+                  position: fixed;
+                  z-index: 100000;
+                  top:0;
+                  left:0;
+                  height: 100%;
+                  width: 100%;
+                  background-color: rgba(0,0,0,.75);
+                  text-align: center;
+                  display: none;
+              }
+              .covid19box{
+                  position: absolute;
+                  height: 75vh;
+                  max-height: 1200px;
+                  margin-top:12.5vh;
+                  padding:10px;
+                  width:768px;
+                  min-width: 40vw;
+                  max-width: 100%;
+                  background-color: white;
+                  display: inline-block;
+                  border-radius: 10px;
+                  left:calc(50% - 384px);
+/*                  overflow: scroll;*/
+              }
+              .covidMob{
+                  display: none;
+              }
+              @media(max-width:768px){
+                  .covid19box{
+                      left:0!important;
+                  }
+                  .covid19btn{
+                      font-size: 14px!important;
+                      top:15px;
+                  }
+                  .covidMob{
+                      display: inline-block;
+                  }
+                  .covidDesk{
+                      display: none;
+                  }
+              }
+              .closeCovid{
+                  top:calc(12.5vh - 40px);
+                  display: inline-block;
+                  position: fixed;
+                  left:calc(50% - 100px);
+                  background-color: red;
+                  color: white;
+                  font-weight: 600;
+                  font-family: 'Lato', sans-serif;
+                  z-index: 500;
+                  cursor: pointer;
+                  text-decoration: none!important;
+                  border:1px solid red;
+                  transition: ease all .3s;
+                  border-top-right-radius: 5px;
+                  border-top-left-radius: 5px;
+                  font-size: 24px;
+                  text-transform: uppercase;
+                  width: 200px;
+                  padding: 0;
+                  height: 40px;
+                  line-height: 40px;
+              }
+              .closeCovid:hover{
+                  background-color: transparent;
+                  color: white!important;
+                  text-shadow: 0 0 5px black;
+              }
+              .covid19pdf{
+                  
+              }
+          </style>
+                <div class="covid19cover">
+              <a class="closeCovid" onclick="showCovid()">Close X</a>
+              <div class="covid19box">
+                <embed class="covid19pdf" src="fitu_covid19.pdf#view=FitH" type="application/pdf" style="width:100%;margin:0 auto;display: block;100%;height: 100%;" />
+              </div>
+          </div>
+          <script type="text/javascript">
+            function showCovid(){
+                $("div.covid19cover").fadeToggle(500);
+            }
+          </script>
+    <div class="navWrap animated slideInDown">
+     <div style="text-align:left;display:inline">
+         <a href="index.html"><img class="fitimg" src="Resources/css/img/Fitness-U-Logo-web.png" style="height:50px;"></a>
+     </div>
+     <div class="nav" style="position:absolute;right:5px;top:5px;">
+         <span class="navItem" style="width: 130px;"><a href="homecoach.html"><img style="width: 120px;display: inline-block;position: absolute;left:0;top:0;" src="ResourcesH/css/homecoach/logo2.png"></a></span>
+        <span class="navItem"><a href="events-and-competitions.html">Events</a></span>
+        <span class="navItem"><a href="https://www.yourerie.com/motivation-mondays/">Fitness Tips</a></span>
+        <span class="navItem"><a href="Pages/memberships.html">Memberships</a></span>
+        <span class="navItem"><a href="Pages/pass.html">Free Pass</a></span>
+        <span class="navItem"><a href="Pages/aquatics.html">Aquatics</a></span>
+        <span class="navItem"><a href="Pages/groupclasses.html">Group Fitness</a></span>
+        <span class="navItem"><a href="Pages/gallery.html">Gallery</a></span>
+         <span class="navItem"><a href="Pages/contact.html">Contact Us</a></span>
+     </div>
+      </div>
+       <div class="navBar"><a href="index.html"><img src="Resources/css/img/Fitness-U-Logo-web.png" style="height:100%;"></a><a class="navIcon" onclick="showNav()"><i class="fa fa-bars" aria-hidden="true" style="color:black;font-size:30px;top:10px;right:5px;position:absolute;"></i></a></div>
+        
+        <a class="covid19btn covidDesk" onclick="showCovid()">COVID-19 UPDATE</a>
+        <a class="covid19btn covidMob" href="covid-19-update.html">COVID-19 UPDATE</a>
+       
+       <div class="slideNav hideSlide animated slideOutUp">
+           <div class="itemWrap">
+               <a class="mobileNavLink" href="homecoach.html" style="display:block;font-size:16px;margin-top:10px;background-color: transparent!important;"><img style="width:160px;margin-left:-10px;display: inline-block;" src="ResourcesH/css/homecoach/logo2.png"></a>
+           <a class="mobileNavLink" href="Pages/pass.html" style="display:block;font-size:16px;margin-top:10px;"><span>Free Day Pass</span></a>
+               <a class="mobileNavLink" href="events-and-competitions.html" style="display:block;font-size:16px;"><span>Events</span></a>
+                    <a class="mobileNavLink" href="https://www.yourerie.com/motivation-mondays/" style="display:block;font-size:16px;"><span>Fitness Tips</span></a>
+                     <a href="Pages/memberships.html" class="mobileNavLink" style="display:block;font-size:16px;"><span>Memberships</span></a>
+
+                     <a href="Pages/groupclasses.html" class="mobileNavLink" style="display:block;font-size:16px;"><span>Class Schedule</span></a>
+                     <a href="Pages/youthaquatics.html" class="mobileNavLink" style="display:block;font-size:16px;"><span>Youth Aquatics</span></a>
+                     <a href="Pages/adultaquatics.html" class="mobileNavLink" style="display:block;font-size:16px;"><span>Adult Aquatics</span></a>
+                     <a href="Pages/silversneaker.html" class="mobileNavLink" style="display:block;font-size:16px;"><span>Silver Sneaker</span></a>
+                     <a href="Pages/gallery.html" class="mobileNavLink" style="display:block;font-size:16px;"><span>Gallery</span></a>
+                     <a href="Pages/contact.html" class="mobileNavLink" style="display:block;font-size:16px;"><span>Contact Us</span></a>
+             </div>
+         </div>
+       
+        <div class="head container animated fadeIn">
+            <div class="row">
+                <div style="color:white;height:40px;margin:10px;background-color:#213F9A;border-radius:10px;box-shadow: 0px 0px 15px grey;"><a class="link" style="cursor:pointer;float:right;margin:7px" href="tel:+1-814-459-3033"><span style="font-family:'Roboto';font-weight:bold;"><i class="fa fa-phone" aria-hidden="true"></i> (814) 459-3033</span></a><span style="float:left;margin:7px;font-family:'Roboto';font-weight:bold;" href="tel:+1-814-459-3033"><span>Call Us Today!</span></span></div>
+                 <div id="imgwrap" class="col-sm-8 animated fadeIn" style="margin-bottom:5px;min-height:150px;height:100%;">
+                 <div id="slideshow">
+
+
+
+    <div class="animated fadeIn" style="margin-bottom: 5px;">
+     <a href="homecoach.html"><img src="Resources/css/img/promos/homecoach.jpg" width=100%></a>
+   </div>
+                        <div class="animated fadeIn" style="margin-bottom: 5px;">
+     <a href="Pages/memberships.html"><img src="Resources/css/img/promos/go24box.jpg" width=100%></a>
+   </div>
+
+<div class="animated fadeIn">
+     <a href="2-for-20.html"><img src="Resources/css/img/promos/2for20slide.jpg" width=100%></a>
+   </div>
+
+<!--
+   <div>
+     <a href="Pages/40for40.html"><img src="Resources/css/img/promos/40promo.jpg" width=100%></a>
+   </div>
+-->
+
+<!--
+                     <div>
+     <a href="Pages/7daypass.php"><img src="Resources/css/img/promos/newyearpromo.jpg" width=100%></a>
+   </div>
+-->
+
+</div>  
+        
+                 </div>
+                 <div class="col-sm-4 animated fadeIn" style="text-align:center;padding-left:0px;padding-right:0px;">
+
+<!--                  <a href="Pages/memberships.html" class="btn bigBtn">Join Now</a>-->
+<!--             <a href="Pages/pass.html" class="btn bigBtn">Free Day Pass</a>-->
+<!--                     <a href="Pages/40for40.html" class="btn bigBtn blueBtn">Women's 40 for 40</a>-->
+<!--                     <a class="btn bigBtn blueBtn"  href="tel:+1-814-459-3033"><i class="fa fa-phone" aria-hidden="true"></i> 814-459-3033</a>-->
+
+<!--             <a href="https://endurancecui.active.com/new/events/46112452/select-race?e4p=9de96389-919b-4c8a-993d-7f930d9ddd1d&e4ts=1499908339&e4q=30672b6c-6b2a-49da-b452-499baacf95d9&e4c=active&e4e=snawe00000000&e4h=e4358d86cc1d0d0ac7452cac250b24ae&regnow=awe-regnow&e4rt=Safetynet&_p=8941404842910881" class="btn bigBtn">iRock Charity 5K Registration</a>-->
+             <div style="padding:5px;padding-top:0px;border-radius: 10px"> 
+             
+<!--
+                     <video style="width:96.5%;" autoplay loop muted inline>
+                        <source src="Resources/css/img/bf/blackfriday480p.mp4" type="video/mp4">
+                    </video>
+-->
+<!--
+                 <a href="black-friday.html">
+                     <video id="video" style="width:96.5%;" autobuffer autoplay loop muted><source src="Resources/css/img/bf/blackfriday480p.mp4" type="video/mp4">
+                     </video>
+                 </a>
+-->
+                 
+                 <div>
+                     <div >
+                         <a href="https://freeeriegympasses.com/fitness-u/personal-training"><img src="Resources/css/img/promos/coach.jpg" style="width:96.5%;margin-top:0px;"></a>
+                     </div>
+                     <div>
+<!--
+                        <a href="indoor-triathlon.html">
+                            <img src="Resources/css/img/promos/indoortfb3.jpg" style="width:96.5%;margin-top:0px;">
+                         </a>
+-->
+                     </div>
+                     
+                 </div>
+                 
+                 <a id="callCoach" class="btn bigBtn" href="tel:+1-814-315-2206"><i class="fa fa-phone" aria-hidden="true"></i> Tap Here to Call Hotline</a>
+<hr style="margin-top:15px;">
+                 <a href="Pages/pass.html" style="width:95%;display: inline-block;margin:5px;line-height: 25px;" class="btn bigBtn blueBtn">Free Day Pass</a>
+                <a href="Pages/memberships.html" style="width:95%;display: inline-block;margin:5px;line-height: 25px;" class="btn bigBtn">Join Now</a>
+                <a href="http://freeeriegympasses.com/fitness-u/personal-training" style="width:95%;display: inline-block;margin:5px;line-height: 25px;" class="btn bigBtn blueBtn">Free Personal Training Session</a>
+                               
+<!--                 <a href="http://freeeriegympasses.com/fitness-u/personal-training" class="btn bigBtn blueBtn">Free Personal Training Session</a>-->
+<!--
+             <a href="http://fituswim.getforge.io"><img src="Resources/css/img/promos/christmas.jpg" style="width:100%;"></a>
+<br><br>
+                     <a id="santaBTN" href="http://fituswim.getforge.io">Learn More <i class="fa fa-arrow-right" aria-hidden="true"></i></a>
+-->
+                 </div>
+<!--
+                    <a style="cursor:pointer" onclick="showSchedule()"><div style="color:white;height:40px;margin:10px;background-color:#213F9A;border-radius:10px;padding:8px">
+                        <span style="font-family:lato;font-weight:bold;">Today's Schedule <i class="fa fa-chevron-down" aria-hidden="true"></i> </span>
+                    </div></a>
+-->
+                 </div>
+             </div>
+<!--
+            <div class="row" style="text-align:center;">
+                <a href="Pages/pass.html" style="width:300px;display: inline-block;margin:5px;line-height: 25px;" class="btn bigBtn blueBtn">Free Day Pass</a>
+                <a href="Pages/memberships.html" style="width:300px;display: inline-block;margin:5px;line-height: 25px;" class="btn bigBtn">Join Now</a>
+                <a href="http://freeeriegympasses.com/fitness-u/personal-training" style="width:300px;display: inline-block;margin:5px;line-height: 25px;" class="btn bigBtn blueBtn">Free Personal Training Session</a>
+            </div>
+-->
+         </div>
+        <br>
+        <br>
+         <div class="container-fluid;">
+            <div class="row" style="text-align: center;margin-left:2.5vw;margin-right:2.5vw;">
+                <div class="col-md-1 card">
+                  <br>
+                  <div style="min-height:320px;text-align: left;">
+<!--                   <h1 style="color:white;font-size:26px;font-weight:900;margin-top:0px;">Silver Sneaker</h1>-->
+                    <a href="learn-to-lift.html"><img src="Resources/css/img/promos/lift/learn.jpg"
+                    width=100% style="margin-bottom:5px;"></a>
+                      <span style="display:block;font-weight: 900;font-size: 16px;">FEBRUARY SESSION NOW ENROLLING</span>
+                    Participants learn how to build and tone muscles, increase lean body mass, and improve hand-eye coordination, balance, movement, cardiovascular-respiratory endurance, flexibility &amp; agility.
+                    </div>
+                    <a href="learn-to-lift.html" class="btn cardBTN">Learn More <i class="fa fa-arrow-right" aria-hidden="true"></i></a>
+                </div>
+                <div class="col-md-1 card" style="text-align: center;">
+                   <br>
+                   <div style="min-height:320px">
+                    <a href="Pages/groupclasses.html"><img src="Resources/css/img/gallery/group.jpg"
+                    width=100% style="margin-bottom:5px;max-width:300px"></a>
+                    <h1 style="color:white;font-size:26px;font-weight:900;">Group Fitness</h1>
+                    View, print, enjoy! Check out the lastest group class schedule here.
+                    </div>
+                    <a href="Pages/groupclasses.html" class="btn cardBTN">View Schedule <i class="fa fa-arrow-right" aria-hidden="true"></i></a>
+                </div>
+                <div class="col-md-1 card">
+                 <br>
+                 <div style="min-height:320px">
+<!--                  <h1 style="color:white;font-size:26px;font-weight:900;margin-top:0px">Join Today for $0 Down</h1>-->
+
+                    <a href="Pages/7daypass.php"><img src="Resources/css/img/promos/freedaypass.jpg"
+                    width=100% style="margin-bottom:5px;"></a>
+<!--                     <h1 style="color:white;font-size:26px;font-weight:900;">BOGO Memberships</h1>-->
+                     <br>
+                     <br>
+                     Swim, bike, and run to a new you here at FitnessU! Here's a free day pass for you to enjoy.
+                     <p style="font-size:10px;margin-top:10px">*For new customers only</p>
+                    </div>
+
+                    <a href="Pages/7daypass.php" class="btn cardBTN">Free Day Pass </a>
+                </div>
+                <div class="col-md-1 card">
+                   <br>
+                   <div style="min-height:320px">
+                    <a href="Pages/adultaquatics.html"><img src="Resources/css/img/gallery/pool.jpg"
+                    width=100% style="margin-bottom:5px;max-width:300px"></a>
+                    <h1 style="color:white;font-size:26px;font-weight:900;">Pool Schedules</h1>
+                    Pool programming includes water fitness, aqua Zumba, and more! Click here for class details and schedule.
+                    </div>
+                    <a href="Pages/adultaquatics.html" class="btn cardBTN">View Schedule <i class="fa fa-arrow-right" aria-hidden="true"></i></a>
+                </div>
+                <div class="col-md-1 card">
+                  <br>
+                  <div style="min-height:320px">
+<!--                   <h1 style="color:white;font-size:26px;font-weight:900;margin-top:0px;">Silver Sneaker</h1>-->
+                    <a href="Pages/silversneaker.html"><img src="Resources/css/img/promos/silversneakers.jpg"
+                    width=100% style="margin-bottom:5px;"></a>
+                    SilverSneakers is a fun, energizing program that helps older adults take greater control of their health by encouraging physical activity and offering social events.
+                    </div>
+                    <a href="Pages/silversneaker.html" class="btn cardBTN">Learn More <i class="fa fa-arrow-right" aria-hidden="true"></i></a>
+                </div>
+                <div class="col-md-1 card">
+                  <br>
+                  <div style="min-height:320px;text-align: left;">
+<!--                   <h1 style="color:white;font-size:26px;font-weight:900;margin-top:0px;">Silver Sneaker</h1>-->
+                    <a href="https://freeeriegympasses.com/fitness-u/personal-training"><img src="Resources/css/img/fitU365.jpg"
+                    width=100% style="margin-bottom:5px;"></a>
+                    Our knowledgeable, certified, and motivating personal trainers are here to help you reach your fitness goals, no matter what fitness level you’re starting at.
+                    </div>
+                    <a href="https://freeeriegympasses.com/fitness-u/personal-training" class="btn cardBTN">Learn More <i class="fa fa-arrow-right" aria-hidden="true"></i></a>
+                </div>
+            </div> 
+         </div>
+         <br>
+<div class="contact" >
+           <div class="container" style="height:100%;">
+               <div class="row" style="height:100%">
+                  <div class="col-sm-6 col-sm-push-6">
+                      <br>
+                       <span class="contactInfo" style="font-size:24px;text-decoration:underline;">FitnessU</span>
+
+                       <span class="contactInfo">2312 West 15th Street</span>
+                       <span class="contactInfo">Erie, PA 16505</span>
+                       <a href="tel:+1-814-459-3033"><span class="contactInfo">814-459-3033</span></a>
+                       <br>
+                       <span class="contactInfo" style="font-size:24px;text-decoration:underline;">Hours</span>
+                       <span class="contactInfo">Monday-Thursday: 5AM to 12AM</span>
+                       <span class="contactInfo">Friday: 5AM to 10PM</span>
+                       <span class="contactInfo">Saturday/Sunday: 6AM to 6PM</span>
+                      <br>
+                       <span class="contactInfo" style="font-size:24px;text-decoration:underline;">Holiday Hours</span>
+                      <span class="contactInfo">Thanksgiving Day: 5am to 1pm</span>
+                      <span class="contactInfo">Black Friday: 5am to 10pm</span>
+                      <span class="contactInfo">Christmas Eve: 5am to 1pm</span>
+                      <span class="contactInfo">Christmas Day: Closed</span>
+                    
+                      <span class="contactInfo">New Year's Eve: 5am to 4pm</span>
+                      <span class="contactInfo">New Year's Day: 6am to 6pm</span>
+                       <br>
+                      
+<!--
+                       <span class="contactInfo" style="font-size:24px;text-decoration:underline;">Holiday Hours</span>
+                       <span class="contactInfo">Veterans Day: 6AM to 6PM</span>
+                       <span class="contactInfo">Thanksgiving: 7AM to 3pm</span>
+                       <span class="contactInfo">Black Friday: 5AM to 10PM</span>
+                       <br>
+-->
+                       <span class="contactInfo" style="font-size:24px;text-decoration:underline;">Childcare Hours</span>
+                       <span class="contactInfo">Monday-Friday: 7:45AM to 1PM, 3:15PM to 8PM</span>
+                       <span class="contactInfo">Saturday: 7:45AM to 12PM</span>
+                       <a target="_blank" class="socialButtons" href="https://www.facebook.com/FitnessUErie/"><i style="padding-top:10px;font-size:50px;" class="fa fa-facebook-square" aria-hidden="true"></i></a>
+                   </div>
+                   <div class="col-sm-6 col-sm-pull-6" style="height:400px">
+                       <iframe src="https://www.google.com/maps/embed/v1/place?key=AIzaSyBMT6XGAHCRybI10cYXk_NN4GbAveJubx0&q=fitnessu+erie,pa" height=100% width=100% frameborder="0" style="border:0" allowfullscreen></iframe>
+                   </div>
+               </div>
+           </div>
+         </div>
+         <div class="line"></div>
+         <div class="irockFooter">
+
+         <div class="container">
+             <div class="row footrow">
+                 <div class="col-xs-4">
+                     <a href="Pages/pass.html" style="display:block;font-size:16px;"><span>Free Day Pass</span></a>
+                     <a href="Pages/memberships.html" style="display:block;font-size:16px;"><span>Memberships</span></a><a href="homecoach.html" style="display:block;font-size:16px;"><span>Homecoach</span></a>
+                 </div>
+                 <div class="col-xs-4">
+                    <a href="Pages/groupclasses.html" style="display:block;font-size:16px;"><span>Class Schedule</span></a>
+                     <a href="Pages/youthaquatics.html" style="display:block;font-size:16px;"><span>Youth Aquatics</span></a>
+                     <a href="Pages/adultaquatics.html" style="display:block;font-size:16px;"><span>Adult Aquatics</span></a>
+                     
+                 </div>
+                 <div class="col-xs-4">
+                     <a href="certification-center.html" style="display:block;font-size:16px;"><span>Certification &amp; Training Center</span></a>
+                     <a href="Pages/silversneaker.html" style="display:block;font-size:16px;"><span>Silver Sneaker</span></a>
+                     <a href="Pages/gallery.html" style="display:block;font-size:16px;"><span>Gallery</span></a>
+                     <a href="Pages/contact.html" style="display:block;font-size:16px;"><span>Contact Us</span></a>
+                 </div>
+             </div>
+         </div>
+             <br>
+          <div style="font-size:12px;font-weight:100;text-align:center;color:white;margin-top:5px">
+                 Copyright &copy; 2020 FitnessU - <a style="text-decoration:underline" target="_blank" href="privacypolicy.htm">Privacy Policy</a>
+                                      <div class="container" style="margin-top:15px;">
+            <div class="row">
+                <div class="col-sm-12">
+                    <a target="_blank" href="http://www.fastweberie.com" style="display:inline-block;line-height:50px;height:70px;font-size:12px;color:white !important;cursor: pointer;text-decoration: none !important;padding-right:5px;">Created by </a><a target="_blank" href="http://www.fastweberie.com"><img src="whitetrans.png" style="height:70px;display: inline-block;padding-bottom:28px;"></a>
+                </div>
+            </div>
+        </div>
+          </div>
+      </div>
+        <script type="text/javascript"
+
+    id="botcopy-embedder-d7lcfheammjct"
+
+    class="botcopy-embedder-d7lcfheammjct" 
+
+    data-botId="5e7c9b81099273f574bbc75e"
+
+>
+
+    var s = document.createElement('script'); 
+
+    s.type = 'text/javascript'; s.async = true; 
+
+    s.src = 'https://widget.botcopy.com/js/injection.js'; 
+
+    document.getElementById('botcopy-embedder-d7lcfheammjct').appendChild(s);
+
+</script>
+    </body>  
+</html>

@@ -1,0 +1,135 @@
+/* Orange - rgb(255,84,0) | Yellow - rgb(255,180,0) */
+@font-face {
+  font-family: 'hcReg';
+  src:url('hc_font/regular.ttf') format('truetype');
+}
+@font-face {
+  font-family: 'hcBold';
+  src:url('hc_font/bold.ttf') format('truetype');
+}
+
+/* NAVIGATION */
+.hcNav{
+    background-color: white;
+    height:4vw;
+}
+#hcLogo{
+    display: inline-block;
+    height: 100%;
+}
+#fitUlogo{
+    display: inline-block;
+    height:90%;
+    padding-top:1.25vw;
+    float: right;
+    margin-right:.5vw;
+}
+#poweredBy{
+    font-family: 'hcBold';
+    color:rgb(85,85,85);
+    position: absolute;
+    right:3.75vw;
+    top:.5vw;
+    font-size:1.3vw;
+}
+.hcBar{
+    text-align: right;
+    background-color: rgb(255,84,0);
+}
+.hcBar>a{
+    background-color:transparent;
+    color:white;
+    display: inline-block;
+    padding:.35vw .95vw .35vw .95vw;
+    font-family: 'Lato', sans-serif;
+    font-weight:700;
+    text-transform: none!important;
+    border-left:.15vw solid white;
+    letter-spacing: .5px;
+    cursor: pointer;
+    -webkit-transition:ease all .3s;
+    transition:ease all .3s;
+    text-decoration: none!important;
+    font-size:1vw;
+}
+.hcBar>a:hover{
+    background-color:white;
+    color:rgb(255,84,0);
+}
+
+/* SECTION 1 */
+.section1{
+    background-image: url(../../homecoach/back1.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    vertical-align: top;
+    padding-bottom: 1.5vw;
+}
+.section1>img{
+    width:49%;
+    display: inline-block;
+    vertical-align: top;
+}
+#vidDiv{
+    width:50%;
+    display: inline-block;
+    vertical-align: top;
+    padding-top:1.5vw;
+}
+#vidDiv>span{
+    font-family: 'hcBold';
+    color: white;
+    display: block;
+    text-align: center;
+    line-height: 110%;
+    letter-spacing: 1px;
+}
+#topSpan{
+    font-size:2.75vw;
+}
+#bottomSpan{
+    font-size:3.5vw;
+}
+#title{
+    font-size:2.5vw;
+}
+#titleText{
+    font-family: 'hcReg'!important;
+    font-size:2.5vw;
+    text-align: right!important;
+    margin-right:10vw;
+}
+
+/* SECTION 2 */
+.section2{
+    vertical-align: top;
+}
+.section2>img{
+    vertical-align: top;
+    width:40%;
+}
+#servText{
+    width:59%;
+    display: inline-block;
+    padding-top:1vw;
+    padding-right:1vw;
+}
+#servTop{
+    font-family: 'hcBold';
+    color:rgb(85,85,85);
+    display: block;
+    text-align: right;
+    line-height: 100%;
+    font-size: 10vw;
+}
+#servBot{
+    font-family: 'hcReg';
+    color:rgb(85,85,85);
+    display: block;
+    text-align: right;
+    line-height: 100%;
+    font-size: 6vw;
+}
+
+/* SECTION 2 */

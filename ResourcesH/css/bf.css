@@ -1,0 +1,186 @@
+body, h2, a, p, h1{
+    font-family: rift, sans-serif!important;
+}
+.logoBar{
+    padding:3px;
+    background-color:rgb(69,65,66);
+    text-align: center;
+    margin:0px;
+    height:80px;
+}
+.logoBar img{
+    display: inline-block;
+    height:100%;
+    margin:0px;
+}
+.imgShadow>img{
+    -webkit-box-shadow: 0px 0px 12px 0px rgba(0,0,0,0.75);
+    box-shadow: 0px 0px 12px 0px rgba(0,0,0,0.75);
+    display: inline-block;
+    z-index: 900;
+    width:100%;
+}
+#mobBanner{
+    display: none;
+}
+.bfContent{
+    background-image: url(img/bf/background.jpg);
+    background-size: cover;
+    background-position: bottom;
+}
+.imgCol{
+    text-align: right;
+}
+.imgWrap{
+    display: none;
+    -webkit-box-shadow: 0px 0px 12px 0px rgba(0,0,0,0.75);
+    box-shadow: 0px 0px 12px 0px rgba(0,0,0,0.75);
+    margin:10px;
+    margin-top:15px;
+    margin-bottom: 15px;
+}
+.imgWrap>img{
+    width:300px;
+    max-width: 100%;
+}
+.deal{
+    text-align: center;
+}
+.deal h2{
+    font-size:30px;
+    font-style: italic;
+    text-align: center;
+    font-weight: 900;
+    width: 350px;
+    max-width: 98%;
+    margin:0 auto;
+    margin-top:30px;
+    line-height: 26px;
+    color:rgb(0,0,227);
+}
+.get{
+    color:rgb(0,0,227);
+    font-size: 40px;
+    font-weight: 400;
+    width: 100%;
+    line-height: 35px;
+    text-align: center;
+    display: inline-block;
+    margin-top:20px;
+}
+.just{
+    color:rgb(0,0,227);
+    font-size: 40px;
+    font-weight: 400;
+    width: 100%;
+    line-height: 35px;
+    text-align: center;
+    display: inline-block;
+}
+.price{
+    color:rgb(0,0,227);
+    width: 100%;
+    text-align: center;
+    display: inline-block;
+    font-weight: 900;
+    font-size: 130px;
+    line-height: 130px;
+    margin-top:-15px;
+    margin-bottom: 10px;
+}
+.months{
+    font-weight: 900;
+    display: inline-block;
+}
+.hurry{
+    font-size:25px;
+    font-style: italic;
+    text-align: center;
+    font-weight: 900;
+    width: 100%;
+    display: inline-block;
+    max-width: 98%;
+    margin:0 auto;
+    margin-top:20px;
+    line-height: 26px;
+    color:rgb(0,0,227);
+    margin-bottom: 20px;
+}
+.buyBTN{
+    background-color:rgb(255,0,41);
+    border:2px solid rgb(255,0,41);
+    color:white;
+    padding:0px;
+    width:200px;
+    font-size: 30px;
+    font-weight: 900;
+    display: inline-block;
+    text-align: center;
+    -webkit-transition:ease all .3s;
+    transition:ease all .3s;
+    cursor: pointer;
+    text-decoration: none!important;
+}
+.buyBTN:hover{
+    color:rgb(255,0,41);
+    background-color: transparent;
+}
+.countdown{
+    background-color:white;
+    color:rgb(255,0,41);
+    padding:10px;
+    line-height:28px;
+    width:100%;
+    max-width:275px;
+    font-size: 28px;
+    font-weight: 900;
+    display: inline-block;
+    text-align: center;
+    margin-bottom: 20px;
+    -webkit-box-shadow: 0px 0px 10px 0px rgba(0,0,0,0.75);
+    box-shadow: 0px 0px 10px 0px rgba(0,0,0,0.75);
+}
+.contentRow{
+    margin-top:50px;
+}
+.ism-slider{
+    -webkit-box-shadow: 0px 0px 12px 0px rgba(0,0,0,0.75);
+    box-shadow: 0px 0px 12px 0px rgba(0,0,0,0.75);
+}
+@media (min-width:992px){
+    .deal{
+        padding:0px!important;
+    }
+    .imgCol{
+        padding:0px;
+        padding-top:6%;
+        position: relative;
+    }
+    .ism-slider{
+        width:115%!important;
+        right:0px;
+    }
+}
+@media (max-width:991px){
+    .logoBar{
+        height:50px;
+    }
+    #mobBanner{
+        display: inline-block;
+    }
+    #deskBanner{
+        display: none;
+    }
+    .imgCol{
+    text-align: center;
+}
+    .contentRow{
+        margin-top:0px!important;
+    }
+    .imgWrap{
+        display: inline-block!important;
+    }
+    .ism-slider{
+    display: none!important;
+}
+}
