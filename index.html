@@ -70,6 +70,18 @@ function showNav(){
 
     </head>
     <body>
+        <style type="text/css">
+            @media (max-width:767px){
+                .mobmob{
+                    display: inline-block!important;
+                }
+                .deskdesk{
+                    display: none!important;
+                }    
+            }
+        </style>
+        <div class="deskdesk" style="width:100%;text-align: left;background-color: transparent;color: white; position: fixed;top: 15px;display: inline-block;left:0;font-size: 14px;z-index: 1001;padding-left: 140px;"><span style="background-color: red;padding:5px;border-radius: 5px;">Re-opening this Friday, June 26, 2020 - Regular Hours</span></div>
+        <div class="mobmob" style="width:100%;text-align: left;background-color: transparent;color: white; position: fixed;top: 20px;display: none;left:0;font-size: 1.9vw;z-index: 1001;padding-left: 120px;"><span style="background-color: red;padding:5px;border-radius: 5px;">Re-opening this Friday, June 26, 2020 - Regular Hours</span></div>
                       <!-- COVID-19 -->
           <style type="text/css">
               .covid19btn{
@@ -183,6 +195,10 @@ function showNav(){
                 $("div.covid19cover").fadeToggle(500);
             }
           </script>
+        
+         
+        
+        
     <div class="navWrap animated slideInDown">
      <div style="text-align:left;display:inline">
          <a href="index.html"><img class="fitimg" src="Resources/css/img/Fitness-U-Logo-web.png" style="height:50px;"></a>
@@ -201,8 +217,14 @@ function showNav(){
       </div>
        <div class="navBar"><a href="index.html"><img src="Resources/css/img/Fitness-U-Logo-web.png" style="height:100%;"></a><a class="navIcon" onclick="showNav()"><i class="fa fa-bars" aria-hidden="true" style="color:black;font-size:30px;top:10px;right:5px;position:absolute;"></i></a></div>
         
+        
+        
+       
+        
+<!--
         <a class="covid19btn covidDesk" onclick="showCovid()">COVID-19 UPDATE</a>
         <a class="covid19btn covidMob" href="covid-19-update.html">COVID-19 UPDATE</a>
+-->
        
        <div class="slideNav hideSlide animated slideOutUp">
            <div class="itemWrap">
