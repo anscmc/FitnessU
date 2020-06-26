@@ -71,6 +71,98 @@ function showNav(){
     </head>
     <body>
         <style type="text/css">
+                    #cover{
+                        background-color: rgba(0,0,0,.75);
+                        position: fixed;
+                        z-index: 10000;
+                        left:0;
+                        top:0;
+                        height:100%;
+                        width:100%;
+                        display: none;
+                    }
+                    .inin{
+                        position: absolute;
+                        top:10vh;
+                        left:calc(50% - 250px);
+                        width:500px;
+                        height: auto;
+                        background-color: white;
+                        text-align: center;
+                        border-radius: 10px;
+                    }
+                    #exitGuy{
+                        position: absolute;
+                        top:0;
+                        right:10px;
+                        font-weight: 700;font-size: 30px;
+                        cursor: pointer;
+                    }
+                    .inin span{
+                        display: block;
+                        color: black;
+                        font-weight: 900;
+                        font-size: 18px;
+                        text-decoration: underline;
+                    }
+                    .inin p{
+                        display: block;
+                        color: black;
+                        font-weight: 400;
+                        font-size: 14px;
+                        max-width: 320px;
+                        margin:0 auto;
+                        margin-bottom: 20px;
+                    }
+                    .whats{
+                        vertical-align: top;
+                    }
+                    .whats p{
+                        margin-bottom: 0;
+                        font-size: 12px;
+                    }
+                    @media (max-width:767px){
+                        .inin{
+                            width:100%;
+                            left:0;
+                        }  
+                    }
+                </style>
+                <script type="text/javascript">
+                    setTimeout(function(){
+                        $('#cover').fadeToggle(500);
+                        }, 2000);
+                    function toggleCover(){
+                        $('#cover').fadeToggle(500);
+                    }
+                </script>
+                <div id="cover" class="popCover">
+                    <div class="inin">
+                        <a onclick="toggleCover()" id="exitGuy">Close X</a>
+                        <div style="height: 45px;"></div>
+                        <span>Re-opening Friday, June 26th</span>
+                        <p>Members are encouraged to wear masks while entering and exiting the club and practice social distancing. Masks are not required during exercise.</p>
+                        <div class="whats" style="width:49%;display: inline-block">
+                            <span>What's Closed:</span>
+                            <p>Group Fitness and Spin programming</p>
+                            <p>Hot tub</p>
+                            <p>Sauna</p>
+                            <br>
+                        </div>
+                        <div class="whats" style="width:49%;display: inline-block">
+                            <span>What's Open:</span>
+                            <p>Child care</p>
+                            <p>Personal Training</p>
+                            <p>General club access</p>
+                            <p>Locker rooms</p>
+                            <p>Showers</p>
+                            <p>Locker access</p>
+                            <br>
+                        </div>
+                    </div>
+                </div>
+<!--
+        <style type="text/css">
             @media (max-width:767px){
                 .mobmob{
                     display: inline-block!important;
@@ -82,6 +174,7 @@ function showNav(){
         </style>
         <div class="deskdesk" style="width:auto;text-align: left;background-color: transparent;color: white; position: fixed;top: 15px;display: inline-block;left:0;font-size: 14px;z-index: 1001;left: 140px;"><span style="background-color: red;padding:5px;border-radius: 5px;">Re-opening this Friday, June 26, 2020 - Regular Hours</span></div>
         <div class="mobmob" style="width:auto;text-align: left;background-color: transparent;color: white; position: fixed;top: 20px;display: none;left:0;font-size: 1.9vw;z-index: 1001;padding-left: 120px;"><span style="background-color: red;padding:5px;border-radius: 5px;">Re-opening this Friday, June 26, 2020 - Regular Hours</span></div>
+-->
                       <!-- COVID-19 -->
           <style type="text/css">
               .covid19btn{
